@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output,EventEmitter } from '@angular/core';
+// import * as EventEmitter from 'events';
 // import { Quote } from '../quote';
 import { Quote } from '../quote';
 
@@ -10,6 +11,12 @@ import { Quote } from '../quote';
 export class QuoteDetailsComponent implements OnInit {
 
   @Input() Quotes!: Quote;
+
+  @Output() toDelete = new EventEmitter<boolean>();
+
+          deleteQuote(Delete:boolean){
+            this.toDelete.emit(Delete)
+          }
 
 
   constructor() { }

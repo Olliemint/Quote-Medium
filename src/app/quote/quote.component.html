@@ -25,7 +25,7 @@
                           <p class="card-text">{{Quote.Quote}}</p>
                         </div>
                         <div class="card-footer bg-transparent border-success">
-                            <app-quote-details *ngIf="Quote.seeMore" [Quotes]="Quote"></app-quote-details>
+                            <app-quote-details *ngIf="Quote.seeMore" [Quotes]="Quote" (toDelete)="removeQuote($event,i)"></app-quote-details>
 
                         
                         </div>

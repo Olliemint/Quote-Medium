@@ -22,6 +22,13 @@ export class QuoteComponent implements OnInit {
     this.Quotes[index].seeMore = !this.Quotes[index].seeMore
   }
 
+  removeQuote(toDelete: any,index: number){
+    if(toDelete){
+      this.Quotes.splice(index,1)
+      
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
