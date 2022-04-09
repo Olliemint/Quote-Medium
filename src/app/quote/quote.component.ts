@@ -14,7 +14,8 @@ export class QuoteComponent implements OnInit {
     new Quote('Motivational','We cannot solve problems with the kind of thinking we employed when we came up with them.','Albert Einstein',0,0,'Collins Leteipa'),
     new Quote('Nature','I go to nature to be soothed and healed, and to have my senses put in order.','John Burroughs',0,0,'Terry Wambui'),
     new Quote('Life','Let the rain kiss you. Let the rain beat upon your head with silver liquid drops. Let the rain sing you a lullaby.','Langston Hughes',0,0,'Eve Bet'),
-    new Quote('')
+    new Quote('Famous','Children are great imitators. So give them something great to imitate.','Anonymous',0,0,'Malik Salim'),
+    new Quote('Success','Money won’t create success, the freedom to make it will.','Nelson',0,0,'Ollie Mint')
   ]
 
   constructor() { }

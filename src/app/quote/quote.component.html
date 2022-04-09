@@ -17,6 +17,13 @@
                   </div>
                   <div class="col-6 col-sm-4">
                       <h3>Add a Quote</h3>
+                      <li *ngFor="let Quote of Quotes ">
+                          
+                         {{Quote.Qoutetitle}}
+                         <br>
+
+                          {{Quote.Quote}}
+                      </li>
 
                   </div>
      
