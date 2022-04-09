@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.css" */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+.header h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 700;
+
+}
