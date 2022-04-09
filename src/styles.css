@@ -16,8 +16,14 @@ html{
 }
 .header h1{
     text-align: center;
-    margin-top: 20px;
+    padding-top: 20px;
     font-size: 50px;
     font-weight: 700;
 
+}
+#background{
+    background-image: url("./assets/background.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
