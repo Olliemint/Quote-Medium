@@ -16,7 +16,11 @@ export class QuoteComponent implements OnInit {
     new Quote('Life','Let the rain kiss you. Let the rain beat upon your head with silver liquid drops. Let the rain sing you a lullaby.','Langston Hughes',0,0,'Eve Bet'),
     new Quote('Famous','Children are great imitators. So give them something great to imitate.','Anonymous',0,0,'Malik Salim'),
     new Quote('Success','Money won’t create success, the freedom to make it will.','Nelson',0,0,'Ollie Mint')
-  ]
+  ];
+
+  findMore(index: number){
+    this.Quotes[index].seeMore = !this.Quotes[index].seeMore
+  }
 
   constructor() { }
 
