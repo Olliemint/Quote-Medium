@@ -20,7 +20,9 @@
                           <h5 class="card-title">Success card title</h5>
                           <p class="card-text">{{Quote.Quote}}</p>
                         </div>
-                        <div class="card-footer bg-transparent border-success">Footer</div>
+                        <div class="card-footer bg-transparent border-success">
+                            <app-quote-details [Quotes]="Quote"></app-quote-details>
+                        </div>
                       </div>
                     </div>
 
