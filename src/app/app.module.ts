@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { AddQuoteComponent } from './add-quote/add-quote.component';
+import { FormsModule } from '@angular/forms';
+import { TimeLapsePipe } from './time-lapse.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     QuoteDetailsComponent,
-    AddQuoteComponent
+    AddQuoteComponent,
+    TimeLapsePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
