@@ -17,11 +17,11 @@ export class QuoteComponent implements OnInit {
     new Quote('Famous','Children are great imitators. So give them something great to imitate.','Anonymous',0,0,'Malik Salim'),
     new Quote('Success','Money won’t create success, the freedom to make it will.','Nelson',0,0,'Ollie Mint')
   ];
-
+              // hide and show Quote details
   findMore(index: number){
     this.Quotes[index].seeMore = !this.Quotes[index].seeMore
   }
-
+             // Quote deletetion
   removeQuote(toDelete: any,index: number){
     if(toDelete){
       this.Quotes.splice(index,1)
