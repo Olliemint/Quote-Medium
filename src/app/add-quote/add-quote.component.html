@@ -1,37 +1,45 @@
 <div class="container-fluid">
-    <h2 class="text-center">Create a new Goal</h2>
+    <h2 class="text-center">Add Your Quote</h2>
     <hr>
-    <form >
+    <!-- <form #goalForm='ngForm'>
+      <div class="form-group">
+
+          <label for="name">Name</label>
+          <input type="text" required class="form-control" id="name" [(ngModel)]="addQuote.name" name="name">
+
+Testing to see if we get any data
+          Display {{addQuote.name}} -->
+      <!-- </div>
+      </form> -->
+    <form #quoteForm ='ngForm'>
         <div class="container">
             <div class="row">
               <div class="col-6 col-sm-8">
                 <div class="form-group">
   
                     <label for="Qoutetitle">Qoute Title:</label>
-                    <input type="text" required class="form-control" id="Qoutetitle" >
+                    <input type="text" required class="form-control" id="Qoutetitle" [(ngModel)]="addQuote.Qoutetitle" name="Qoutetitle">
+                    <!-- Display{{addQuote.Qoutetitle}} -->
                     
           
                 </div>
                 <div class="form-group">
   
                     <label for="Author">Author:</label>
-                    <input type="text" required class="form-control" id="Author">
+                    <input type="text" required class="form-control" id="Author" [(ngModel)]="addQuote.Author" name="Author">
+                    <!-- display{{addQuote.Author}} -->
 
           
                 </div>
                 <div class="form-group">
   
                     <label for="Submittedby">Submitted By:</label>
-                    <input type="text" required class="form-control" id="Submittedby">
+                    <input type="text" required class="form-control" id="Submittedby"[(ngModel)]="addQuote.submittedBy" name="submittedBy" >
+                    Display{{addQuote.submittedBy}}
 
           
                 </div>
-                <div class="form-group">
-                    <label for="Date">Date:</label><br>
-                    <input type='date' id="Date" required>
-          
-                </div>
-                
+             
               </div>
        
             </div>
@@ -40,7 +48,9 @@
         <div class="form-group"><br>
   
             <label for="Qoute">Quote:</label>
-            <textarea class="form-control" id="Qoute" rows="4" required></textarea>
+            <textarea class="form-control" id="Qoute" rows="4" [(ngModel)]="addQuote.Quote" name="Quote"  required ></textarea>
+            
+
   
         </div><br>
         <button type="submit" class="btn btn-success">Add Goal</button>

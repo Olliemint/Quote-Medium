@@ -22,17 +22,20 @@
                         </div>
                         <div class="card-body text-success">
                           
-                          <p class="card-text">{{Quote.Quote}}</p>
+                          <p class="card-text"  >{{Quote.Quote}}</p>
+                          
                           <div class="Qdetails">
                             <app-quote-details *ngIf="Quote.seeMore" [Quotes]="Quote" (toDelete)="removeQuote($event,i)"></app-quote-details>
+                            <p>{{Quote.timeLapse |timeLapse}}</p>
+                            
 
                           </div>
                         </div>
-                        <div class="card-footer bg-transparent border-success">
+                        <!-- <div class="card-footer bg-transparent border-success">
                             
 
                         
-                        </div>
+                        </div> -->
                       </div>
                     </div>
 

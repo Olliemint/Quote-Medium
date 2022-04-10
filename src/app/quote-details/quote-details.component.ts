@@ -26,6 +26,7 @@ export class QuoteDetailsComponent implements OnInit {
           down(){
             this.Quotes.downVotes+= 1;
             
+            
           }
           
           
