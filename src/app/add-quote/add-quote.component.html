@@ -18,7 +18,10 @@ Testing to see if we get any data
                 <div class="form-group">
   
                     <label for="Qoutetitle">Qoute Title:</label>
-                    <input type="text" required class="form-control" id="Qoutetitle" [(ngModel)]="addQuote.Qoutetitle" name="Qoutetitle">
+                    <input type="text" required class="form-control" id="Qoutetitle" [(ngModel)]="addQuote.Qoutetitle" name="Qoutetitle" #Quotetitle="ngModel">
+                    <div [hidden]="Quotetitle.valid || Quotetitle.pristine" class="alert alert-danger">
+                      <p>Enter Qoute Title</p>
+                    </div>
                     <!-- Display{{addQuote.Qoutetitle}} -->
                     
           
@@ -26,7 +29,10 @@ Testing to see if we get any data
                 <div class="form-group">
   
                     <label for="Author">Author:</label>
-                    <input type="text" required class="form-control" id="Author" [(ngModel)]="addQuote.Author" name="Author">
+                    <input type="text" required class="form-control" id="Author" [(ngModel)]="addQuote.Author" name="Author" #Author="ngModel">
+                    <div [hidden]="Author.valid || Author.pristine" class="alert alert-danger">
+                      <p>Author Name required</p>
+                    </div>
                     <!-- display{{addQuote.Author}} -->
 
           
@@ -34,8 +40,10 @@ Testing to see if we get any data
                 <div class="form-group">
   
                     <label for="Submittedby">Submitted By:</label>
-                    <input type="text" required class="form-control" id="Submittedby"[(ngModel)]="addQuote.submittedBy" name="submittedBy" >
-                    Display{{addQuote.submittedBy}}
+                    <input type="text" required class="form-control" id="Submittedby"[(ngModel)]="addQuote.submittedBy" name="submittedBy" #submittedBy="ngModel">
+                    <div [hidden]="submittedBy.valid || submittedBy.pristine" class="alert alert-danger">
+                      <p>Name required</p>
+                    </div>
 
           
                 </div>
@@ -48,7 +56,10 @@ Testing to see if we get any data
         <div class="form-group"><br>
   
             <label for="Qoute">Quote:</label>
-            <textarea class="form-control" id="Qoute" rows="4" [(ngModel)]="addQuote.Quote" name="Quote"  required ></textarea>
+            <textarea class="form-control" id="Qoute" rows="4" [(ngModel)]="addQuote.Quote" name="Quote"  required #Quote="ngModel" ></textarea>
+            <div [hidden]="Quote.valid || Quote.pristine" class="alert alert-danger">
+              <p>Enter your Quote please</p>
+            </div>
             
 
   
