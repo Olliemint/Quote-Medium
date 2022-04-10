@@ -11,7 +11,7 @@ Testing to see if we get any data
           Display {{addQuote.name}} -->
       <!-- </div>
       </form> -->
-    <form #quoteForm ='ngForm'>
+    <form (ngSubmit)="addnewQuote()" #quoteForm ='ngForm'>
         <div class="container">
             <div class="row">
               <div class="col-6 col-sm-8">
@@ -20,7 +20,7 @@ Testing to see if we get any data
                     <label for="Qoutetitle">Qoute Title:</label>
                     <input type="text" required class="form-control" id="Qoutetitle" [(ngModel)]="addQuote.Qoutetitle" name="Qoutetitle" #Quotetitle="ngModel">
                     <div [hidden]="Quotetitle.valid || Quotetitle.pristine" class="alert alert-danger">
-                      <p>Enter Qoute Title</p>
+                      <p>Enter Qoute Title please</p>
                     </div>
                     <!-- Display{{addQuote.Qoutetitle}} -->
                     

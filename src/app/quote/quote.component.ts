@@ -20,6 +20,17 @@ export class QuoteComponent implements OnInit {
     new Quote('Success','Money won’t create success, the freedom to make it will.','Nelson',0,0,'Ollie Mint',new Date(2022,4,8))
   ];
 
+
+  yourQuote(quote: any){
+    let QuoteLength= this.Quotes.length;
+    quote.timeLapse = new Date(quote.timeLapse)
+    quote.upVotes = quote.upVotes
+    quote.downVotes = quote
+    this.Quotes.push(quote)
+    
+
+  }
+
   
   
               // hide and show Quote details
