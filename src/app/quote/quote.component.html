@@ -21,11 +21,15 @@
                             <button (click)="findMore(i)">Find More</button>
                         </div>
                         <div class="card-body text-success">
-                          <h5 class="card-title">Success card title</h5>
+                          
                           <p class="card-text">{{Quote.Quote}}</p>
+                          <div class="Qdetails">
+                            <app-quote-details *ngIf="Quote.seeMore" [Quotes]="Quote" (toDelete)="removeQuote($event,i)"></app-quote-details>
+
+                          </div>
                         </div>
                         <div class="card-footer bg-transparent border-success">
-                            <app-quote-details *ngIf="Quote.seeMore" [Quotes]="Quote" (toDelete)="removeQuote($event,i)"></app-quote-details>
+                            
 
                         
                         </div>
