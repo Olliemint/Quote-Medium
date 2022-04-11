@@ -1,0 +1,20 @@
+.container-fluid label{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.day h1{
+    color: #ffffff;
+}
+.day p{
+    color: #FFD93D;
+    font-size: 18px;
+    font-weight: 700;
+}
+.day hr{
+    color: #F6F54D;
+    height: 5px;
+}
+.btn{
+    background-color: #00FFC6;
+}
