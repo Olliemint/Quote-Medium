@@ -2,7 +2,7 @@
 ##### By Oliver Maiyo
 
 ### This is a Pizza Ordering Website
-<img width="1440" alt="Landing page" src="https://raw.githubusercontent.com/Olliemint/The-Baked-Oven/main/assets/landingpizza.png">
+<img width="1440" alt="Landing page" src="https://raw.githubusercontent.com/Olliemint/Quote-Medium/main/src/assets/quotebg.png">
 
 ## Table of Content
 + [Description](#description)
