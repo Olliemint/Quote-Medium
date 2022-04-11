@@ -16,8 +16,8 @@ export class QuoteComponent implements OnInit {
     new Quote('Motivational','We cannot solve problems with the kind of thinking we employed when we came up with them.','Albert Einstein',0,0,'Collins Leteipa',new Date(2018,8,25)),
     new Quote('Nature','I go to nature to be soothed and healed, and to have my senses put in order.','John Burroughs',0,0,'Terry Wambui',new Date(2019,4,15)),
     new Quote('Life','Let the rain kiss you. Let the rain beat upon your head with silver liquid drops. Let the rain sing you a lullaby.','Langston Hughes',0,0,'Eve Bet',new Date(2022,12,30)),
-    new Quote('Famous','Children are great imitators. So give them something great to imitate.','Anonymous',0,0,'Malik Salim', new Date(2022,7,18)),
-    new Quote('Success','Money won’t create success, the freedom to make it will.','Nelson',0,0,'Ollie Mint',new Date(2022,4,8))
+    // new Quote('Famous','Children are great imitators. So give them something great to imitate.','Anonymous',0,0,'Malik Salim', new Date(2022,7,18)),
+    // new Quote('Success','Money won’t create success, the freedom to make it will.','Nelson',0,0,'Ollie Mint',new Date(2022,4,8))
   ];
 
 
@@ -25,11 +25,18 @@ export class QuoteComponent implements OnInit {
     let QuoteLength= this.Quotes.length;
     quote.timeLapse = new Date(quote.timeLapse)
     quote.upVotes = quote.upVotes
-    quote.downVotes = quote
+    quote.downVotes = quote.downVotes
+    quote.Qoutetitle = quote.Qoutetitle
+    quote.Author = quote.Author
+    quote.submittedBy = quote.submittedBy
+    quote.Quote = quote.Quote
+
     this.Quotes.push(quote)
     
 
   }
+  arr: number[]= this.Quotes.map(Quote1 => Quote1.upVotes)
+  highest = Math.max(...this.arr)
 
   
   

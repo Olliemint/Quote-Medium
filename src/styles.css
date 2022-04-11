@@ -14,17 +14,11 @@
 html{
     scroll-behavior: smooth;
 }
-.header h1{
-    text-align: center;
-    padding-top: 20px;
-    font-size: 50px;
-    font-weight: 700;
 
-}
 #background{
     background-image: url("./assets/background.png");
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
 }
 #display{
@@ -32,6 +26,6 @@ html{
     place-content: center;
     
 }
-#myquotes{
+/* #myquotes{
     background-color: aqua;
-}
+} */
