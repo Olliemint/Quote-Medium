@@ -4,14 +4,14 @@
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Quote-Medium</a>
+          <a class="navbar-brand">Quote-Medium</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Authors</a>
@@ -49,15 +49,15 @@
             <div class="container">
                 <div class="row">
                   <div class="col-6 col-sm-7" id="myquotes">
-                      <h3>Inspirational Quotes at BrainyQuote</h3>
+                      <h3> Quotes at Quote-Medium</h3>
                       
                       <div class="flex">
                       <div class="card border-success mb-3" style="max-width: 18rem;" *ngFor="let Quote of Quotes; let i=index " id="li">
                         <div class="card-header bg-transparent border-success" id="title">
                             <h4>{{Quote.Qoutetitle}}</h4>
-                            <button (click)="findMore(i)">Find More</button>
+                            <button (click)="findMore(i)" class="btn btn-success">More</button>
                         </div>
-                        <div class="card-body text-success">
+                        <div class="card-body text-success" id="qq">
                           <!-- <div *ngIf="Quote.upVotes == highest";then highlight else empty>
 
                           </div>
@@ -70,11 +70,14 @@
                           
                           </ng-template> -->
                           
-                          <p class="card-text"  >{{Quote.Quote}}</p>
+                          <p class="card-text"  ><span><i class="fa-solid fa-quote-left "></i></span> {{Quote.Quote}} <span><i class="fa-solid fa-quote-right"></i></span></p>
                           
                           <div class="Qdetails">
                             <app-quote-details *ngIf="Quote.seeMore" [Quotes]="Quote" (toDelete)="removeQuote($event,i)"></app-quote-details>
-                            <p>{{Quote.timeLapse |timeLapse}}</p>
+                            <div class="post">
+                            <p>Posted by {{Quote.submittedBy}}</p>
+                            <p>{{Quote.timeLapse |timeLapse}} Days ago</p>
+                          </div>
                             
 
                           </div>

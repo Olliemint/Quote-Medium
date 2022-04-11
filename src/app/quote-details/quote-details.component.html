@@ -1,12 +1,13 @@
 <div class="details">
     <div class="author">
-        <p>{{Quotes.Author}}</p>
+        <p> ― {{Quotes.Author}}</p>
+        
 
     </div>
     <div class="updown">
-        <p><i class="fa-solid fa-thumbs-up fa-2x"(click)="up()"></i>{{Quotes.upVotes}}</p>
-        <p><i class="fa-solid fa-thumbs-down fa-2x" (click)="down()"></i>{{Quotes.downVotes}}</p>
-    <p (click)="deleteQuote(true)"><span><i class="fa-solid fa-trash-can fa-2x"></i></span></p>
+        <p class="updownp"><i class="fa-solid fa-thumbs-up fa-2x"(click)="up()"></i><span>{{Quotes.upVotes}}</span></p>
+        <p class="updownp2"><i class="fa-solid fa-thumbs-down fa-2x" (click)="down()"></i><span>{{Quotes.downVotes}}</span></p>
+    <p (click)="deleteQuote(true)"><span class="del"><i class="fa-solid fa-trash-can fa-1x"></i></span></p>
 
     </div>
     
