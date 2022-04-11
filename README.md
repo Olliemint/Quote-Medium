@@ -26,9 +26,9 @@
 ## Technology Used
 * HTML - which was used to build the structure of the pages.
 * CSS - which was used to style the pages
-* JAVASCRIPT - which was used to design toggle and onclick events of buttons
+* TYPESCRIPT - which was used to design toggle and onclick events of buttons
 * BOOTSTRAP - which was used to style and achieve responsiveness
-* JQUERY - this was used to manipulate buttons
+
 
 ### Behaviour Driven Development (BDD)
 
