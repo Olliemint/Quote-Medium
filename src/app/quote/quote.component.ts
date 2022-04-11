@@ -19,6 +19,7 @@ export class QuoteComponent implements OnInit {
     // new Quote('Famous','Children are great imitators. So give them something great to imitate.','Anonymous',0,0,'Malik Salim', new Date(2022,7,18)),
     // new Quote('Success','Money won’t create success, the freedom to make it will.','Nelson',0,0,'Ollie Mint',new Date(2022,4,8))
   ];
+  
 
 
   yourQuote(quote: any){
