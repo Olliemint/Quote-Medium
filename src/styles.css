@@ -16,7 +16,7 @@ html{
 }
 
 #background{
-    background-image: url("./assets/background.png");
+    background-image: url("https://raw.githubusercontent.com/Olliemint/Quote-Medium/main/src/assets/background.png");
     background-size: cover;
     height: 110vh;
     width: 100%;
