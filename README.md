@@ -1,7 +1,6 @@
 # Quote-Medium
 ##### By Oliver Maiyo
 
-### This is a Pizza Ordering Website
 <img width="1440" alt="Landing page" src="https://raw.githubusercontent.com/Olliemint/Quote-Medium/main/src/assets/quotebg.png">
 
 ## Table of Content
@@ -14,16 +13,15 @@
 + [Known Bugs](#Known-Bugs)
 
 ## Description
-<p>This is a Website that lets a user order Pizza and choose it should be delivered or not.</p>
+<p>A web app where users can view quotes, add quotes and finally upvote or downvote each quote.</p>
 
 ## Installation Requirement
 * Either a computer,phone,tablet or an Ipad
 * Access to the Internet
 
 ### Installation Process
-* Clone the github repo
-* Open the clone in an IDE and host it on your browser
-[Go Back to the top](##### By Oliver Maiyo)
+* Clone the repository from github: https://github.com/Olliemint/Quote-Medium.git
+* Run ng serve --open from your IDE terminal
 
 ## Technology Used
 * HTML - which was used to build the structure of the pages.
@@ -36,14 +34,14 @@
 
 | Behaviour  | Input | Output |
 | ------------- | ------------- | ------------- |
-| Loads to a landing page hero message and display menu and order  | Allows user to choose size of Pizza crust and toppings, also prompt user to enter location |  alerts the user that their order will be delivered to their location, also allows the user to see the grand total and summary of orders |
+| Loads to a landing page, display quotes and form to add new Quote  | Allows user to enter quote title, author, quote and name |  Users can view the quotes they add and also delete a quote ,upvote or downvote|
 
 ## Reference
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML)
 * [JAVASCRIPT](https://developer.mozilla.org/en-US/docs/Glossary/javascript)
 * [BOOTSTRAP](https://developer.mozilla.org/en-US/docs/Glossary/bootstrap)
-* [JQUERY](https://developer.mozilla.org/en-US/docs/Glossary/JQUERY)
+* [TYPESCRIPT](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Angular_building)
 
 ## Known Bugs
 There are no any Known bugs now
@@ -83,4 +81,4 @@ Instagram - [Oliver Maiyo](https://www.instagram.com/oliver_koech_/)
 
 Faceboook - [Oliver Maiyo](https://www.facebook.com/olibenie.koech)
 
-[Go Back to the top](# Akan-names)
+
