@@ -9,6 +9,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
+  likes: Array<number> = [];
 
   @Input() Quotes!: Quote;
 
@@ -21,6 +22,7 @@ export class QuoteDetailsComponent implements OnInit {
 
           up(){
             this.Quotes.upVotes+= 1;
+            this.likes.push(this.Quotes.upVotes)
             
           }
           down(){
@@ -28,6 +30,8 @@ export class QuoteDetailsComponent implements OnInit {
             
             
           }
+        
+          highest = Math.max(...this.likes);
           
           
 

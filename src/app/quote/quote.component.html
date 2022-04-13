@@ -70,7 +70,7 @@
                           
                           </ng-template> -->
                           
-                          <p class="card-text"  ><span><i class="fa-solid fa-quote-left "></i></span> {{Quote.Quote}} <span><i class="fa-solid fa-quote-right"></i></span></p>
+                          <p class="card-text" ><span><i class="fa-solid fa-quote-left "></i></span> {{Quote.Quote}} <span><i class="fa-solid fa-quote-right"></i></span></p>
                           
                           <div class="Qdetails">
                             <app-quote-details *ngIf="Quote.seeMore" [Quotes]="Quote" (toDelete)="removeQuote($event,i)"></app-quote-details>

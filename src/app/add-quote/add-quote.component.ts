@@ -15,6 +15,8 @@ export class AddQuoteComponent implements OnInit {
 
   addnewQuote(){
     this.myQuote.emit(this.addQuote)
+    this.addQuote = new Quote('','','',0,0,'',new Date())
+
   }
 
   constructor() { }
